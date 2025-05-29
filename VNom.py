@@ -3,12 +3,16 @@
 ## provided with no acceptance of liability or promise of functionality
 ## version 0.1.0
 
-import argparse
-import sys
-import os
-global_dir = sys.path[0]
+import argparse 
+## makes it easy to write user-friendly command-line interfaces
+import sys 
+## provides access to system-specific parameters and functions.
+import os 
+## provides functions for interacting with the operating system
+global_dir = sys.path[0] 
+##
 from collections import Counter
-import shutil
+import shutil 
 import glob
 from os.path import exists
 sys.path.insert(0, global_dir+'/dependencies')
